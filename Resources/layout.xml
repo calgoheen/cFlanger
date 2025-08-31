@@ -48,7 +48,8 @@
       </View>
       <View class="parameters nomargin">
         <Slider caption="Cutoff" parameter="cutoff"/>
-        <Slider parameter="output" caption="Output" slider-type="rotary" slider-textbox="textbox-below"/>
+        <Slider parameter="output" caption="Output" slider-type="rotary-horizontal-vertical"
+                slider-textbox="textbox-below"/>
         <Slider caption="Mix" parameter="mix"/>
       </View>
     </View>
