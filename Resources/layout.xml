@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <transparent background-color="transparentblack"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="0" resize-corner="0" caption="cFlanger"
+        width="600" height="400">
+    <View flex-align-self="stretch" display="flexbox" flex-direction="column"
+          caption="LFO" border-color="" lookAndFeel="FoleysFinest" background-color="FF353535">
+      <View>
+        <Slider caption="Shape" parameter="shape" lookAndFeel="FoleysFinest"/>
+        <Slider caption="Depth" parameter="depth"/>
+        <Slider caption="Offset" parameter="offset"/>
+      </View>
+      <View>
+        <Slider caption="Sync" parameter="sync"/>
+        <Slider caption="Rate Free" parameter="rate_free"/>
+        <Slider caption="Rate Sync" parameter="rate_sync"/>
+      </View>
+    </View>
+    <View flex-direction="column">
+      <View>
+        <Slider caption="Delay Time" parameter="delay"/>
+        <Slider caption="Feedback" parameter="feedback"/>
+        <Slider caption="Flip" parameter="flip_fb"/>
+      </View>
+      <View class="parameters nomargin">
+        <Slider caption="Cutoff" parameter="cutoff"/>
+        <Slider parameter="output" caption="Output" slider-type="rotary" slider-textbox="textbox-below"/>
+        <Slider caption="Mix" parameter="mix"/>
+      </View>
+    </View>
+  </View>
+</magic>
