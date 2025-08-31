@@ -6,6 +6,8 @@
 
 cFlanger is a simple flanger audio effect plugin available in VST3, AU, and CLAP formats for Mac and Windows, built using C++ and JUCE.
 
+You can find the actual DSP code for this effect in the [cgo_modules](https://github.com/calgoheen/cgo_modules/tree/main/cgo_processors/effects) repository.
+
 This project is inspired by the flanger audio effect found in a popular DAW.
 
 ## Build Instructions
