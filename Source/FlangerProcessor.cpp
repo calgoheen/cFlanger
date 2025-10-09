@@ -12,7 +12,8 @@ FlangerProcessor::FlangerProcessor()
                                      parameters.rateSync.release(),
                                      parameters.depth.release(),
                                      parameters.offset.release(),
-                                     parameters.cutoff.release(),
+                                     parameters.safeBass.release(),
+                                     parameters.warmth.release(),
                                      parameters.output.release(),
                                      parameters.mix.release() }),
     flanger (parameters)
